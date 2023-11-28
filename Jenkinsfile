@@ -3,7 +3,7 @@ pipeline {
     stages {
       stage('SCM Checkout') {
         steps {
-           checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/HARSHALJETHWA19/ansible-project.git']]])          }
+           checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/vishal9969/ansible-project.git']]])          }
       }  
       stage('Execute Ansible') {
         steps {
